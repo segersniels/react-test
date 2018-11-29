@@ -1,0 +1,16 @@
+.Product-item {
+    background-color: lightgray;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+h3 {
+    display: inline;
+    margin-right: 5px;
+}
+
+.Product-category {
+    display: block;
+}

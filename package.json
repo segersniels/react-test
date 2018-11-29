@@ -3,15 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-redux": "^5.1.1",
+    "react-scripts": "2.1.1",
+    "react-select": "^2.1.2",
+    "redux": "^4.0.1",
+    "redux-saga": "^0.16.2",
+    "reselect": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format-code": "./node_modules/.bin/prettier --write --tab-width 4 --single-quote --trailing-comma all 'src/**/*.{js,jsx,json}'",
+    "precommit": "lint-staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +30,16 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "prettier --write --tab-width 4 --single-quote --trailing-comma all",
+      "git add"
+    ]
+  }
 }
