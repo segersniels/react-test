@@ -1,7 +1,6 @@
 import isUndefined from 'lodash/isUndefined';
 import { takeEvery, put, select } from 'redux-saga/effects';
 import * as actions from '../actions';
-import * as selectors from '../selectors';
 import { fetchProducts } from './util';
 
 const getProducts = function*(action) {

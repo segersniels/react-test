@@ -1,4 +1,4 @@
-import { takeEvery, put, call, all } from 'redux-saga/effects';
+import { takeEvery, put } from 'redux-saga/effects';
 import * as actions from '../actions';
 
 const bootstrap = function*(action) {
